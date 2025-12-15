@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Queen's Portfolio</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-icon" title="Home"><i class="fas fa-home"></i></a>
+                    <a href="#about" class="nav-icon" title="About"><i class="fas fa-user"></i></a>
+                    <a href="#skills" class="nav-icon" title="Skills"><i class="fas fa-code"></i></a>
+                    <a href="#projects" class="nav-icon" title="Projects"><i class="fas fa-project-diagram"></i></a>
+                    <a href="#contact" class="nav-icon" title="Contact"><i class="fas fa-envelope"></i></a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm Queenie Carba</h2>
+            <p class="tagline">Web Developer | Designer | IT Student</p>
+            <p class="age-info">19 years old, studying BSIT at Eastern Visayas State University Carigara Campus</p>
+            <a href="#about" class="explore-btn">Explore My World</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">
+                    <img src="img/profile pic.jpg" alt="Queenie Carba">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Queenie Carba, a passionate 19-year-old IT student at Eastern Visayas State University Carigara Campus. I love creating beautiful and functional web experiences that combine creativity with technology. When I'm not coding, you can find me exploring new design trends or collaborating on exciting projects with my peers.</p>
+                    <p>My journey in web development started with curiosity and has grown into a deep appreciation for clean code and user-centered design. I'm always eager to learn new technologies and tackle challenging problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Skills</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>GitHub</li>
+                        <li>Figma</li>
+                        <li>Canva</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Professional Skills</h3>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="school">School Task</button>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card" data-category="web">
+                    <h3>E-Commerce Website</h3>
+                    <p>A responsive online store built with HTML, CSS, and JavaScript featuring product catalog, shopping cart, and checkout functionality.</p>
+                    <span class="category">Web</span>
+                </article>
+                <article class="project-card" data-category="design">
+                    <h3>Brand Identity Design</h3>
+                    <p>Complete brand identity package including logo, color palette, and marketing materials for a local café using Figma and Canva.</p>
+                    <span class="category">Design</span>
+                </article>
+                <article class="project-card" data-category="web">
+                    <h3>Personal Blog</h3>
+                    <p>A minimalist blog platform with dynamic content loading, built using vanilla JavaScript and responsive CSS.</p>
+                    <span class="category">Web</span>
+                </article>
+                <article class="project-card" data-category="school">
+                    <h3>Database Management System</h3>
+                    <p>A student information system project demonstrating CRUD operations and database design principles for our IT course.</p>
+                    <span class="category">School Task</span>
+                </article>
+                <article class="project-card" data-category="design">
+                    <h3>Mobile App UI Mockups</h3>
+                    <p>User interface designs for a fitness tracking app, focusing on intuitive navigation and beautiful aesthetics.</p>
+                    <span class="category">Design</span>
+                </article>
+                <article class="project-card" data-category="web">
+                    <h3>Weather Dashboard</h3>
+                    <p>Interactive weather application that displays current conditions and forecasts using API integration and modern CSS animations.</p>
+                    <span class="category">Web</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" class="social-btn" id="instagram-btn" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-btn" id="facebook-btn" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Queen's Portfolio. For school purposes only.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
